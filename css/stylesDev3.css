@@ -1,0 +1,88 @@
+#top {
+  position: fixed;
+  top: -30px;
+  left: 0;
+  z-index: 1100;
+  width: 100%;
+  height:175px;
+}
+
+#contentHeader{
+  align: center;
+  padding-left: 600px;
+  padding-right: 600px;
+  padding-top:200px;
+  padding-bottom: 100px;
+}
+
+
+#logo {
+
+    list-style-type: none;
+    margin: 30px;
+    padding: -5px;
+    position: fixed;
+    left: 0px;
+    height: 148px;
+    width: 474px;
+
+}
+
+body{
+  background-color: #330000;
+}
+
+p{
+  text-align: left;
+  color: white;
+  font-size: 25px;
+}
+
+
+ul {
+  list-style-type: none;
+  margin-left: : 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  position: fixed;
+  width: 100%;
+  height: 150px;
+}
+
+li {
+
+  float: right;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+  background-color: #111;
+}
+
+.active {
+  background-color: #4CAF50;
+}
+
+/* FLEXXX */
+#flex-container {
+  display: flex;
+  flex-flow: column wrap;
+}
+
+#flex-container > :nth-child(3n + 1) { order: 1; } /* 1st column */
+#flex-container > :nth-child(3n + 2) { order: 2; } /* 2nd column */
+#flex-container > :nth-child(3n + 3) { order: 3; } /* 3rd column */
+
+#flex-container > :nth-child(-n + 3) {
+  page-break-before: always; /* CSS 2.1 syntax */
+  break-before: always;  /* New syntax */
+}
